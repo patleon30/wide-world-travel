@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Wide Travel Guides</title>
+</head>
+<body ng-app="bookApp">
+<div class ="Books" ng-controller ="bookController">
+<h3>List of Tours</h3>
+<ul>
+	<li ng-repeat="book in books">
+	{{book.title}} {{book.type}} {{book.price}}
+	</li>
+</ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</body>
+</html>
